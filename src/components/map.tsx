@@ -1,75 +1,70 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import maplibreGl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+
+const createMarker = () => {
+  const customMarker = document.createElement('div');
+  customMarker.className = 'custom-marker';
+  customMarker.style.width = '15px';
+  customMarker.style.height = '15px';
+  customMarker.style.backgroundColor = '#00A1E0';
+  customMarker.style.border = '2px solid white';
+  customMarker.style.borderRadius = '50%';
+  customMarker.style.boxShadow = '0 0 5px rgba(0,0,0,0.5)';
+  customMarker.style.cursor = 'pointer';
+
+  return customMarker;
+};
 
 const CustomMap = () => {
   const mapContainerRef = useRef(null);
   const mapRef = useRef(null);
 
   useEffect(() => {
-    // Initialize the map using MapLibre
     if (!mapRef.current) {
       mapRef.current = new maplibreGl.Map({
-        container: mapContainerRef.current, // Reference to the map container
+        container: mapContainerRef.current,
         style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
         center: [-98.5795, 39.8283],
-        zoom: 9, // Initial zoom level
+        zoom: 9,
         attributionControl: false,
+        dragPan: false,
+        interactive: false,
       });
 
-      // Add navigation controls (zoom buttons, etc.)
-      mapRef.current.addControl(
-        new maplibreGl.NavigationControl(),
-        'top-right'
-      );
-
-      console.log('map', mapRef);
+      if (mapRef.current) {
+        handleFly();
+        addMarker();
+      }
     }
   }, []);
 
-  // Fly to a random location by clicking the button
   const handleFly = () => {
     if (mapRef.current) {
       const newCenter = [-86.1581, 39.7684];
 
       mapRef.current.flyTo({
         center: newCenter,
-        essential: true, // Ensures animation works for users with reduced motion preferences
-        zoom: 14,
-        speed: 1.5,
+        essential: true,
+        zoom: 13,
+        speed: 2,
         curve: 1,
       });
     }
   };
 
+  const addMarker = () => {
+    const customMarker = createMarker();
+    new maplibreGl.Marker({
+      element: customMarker,
+    })
+      .setLngLat([-86.1581, 39.7684])
+      .addTo(mapRef.current);
+  };
   return (
-    <div style={{ height: '100vh', position: 'relative' }}>
-      {/* Map container */}
-      <div ref={mapContainerRef} style={{ height: '500px', width: '100%' }} />
-
-      {/* Fly button */}
-      <button
-        id='fly'
-        style={{
-          display: 'block',
-          position: 'absolute',
-          top: '20px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          width: '50%',
-          height: '40px',
-          padding: '10px',
-          border: 'none',
-          borderRadius: '3px',
-          fontSize: '12px',
-          textAlign: 'center',
-          color: '#fff',
-          backgroundColor: '#ee8a65',
-        }}
-        onClick={handleFly}
-      >
-        Fly
-      </button>
+    <div className='relative h-screen'>
+      <div ref={mapContainerRef} className='h-60 w-full' />
+      <div className='absolute top-0 left-0 w-full h-60 bg-black bg-opacity-50 pointer-events-none'></div>
     </div>
   );
 };

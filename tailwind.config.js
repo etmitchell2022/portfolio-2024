@@ -52,6 +52,10 @@ export default {
         },
         'custom-bg': 'rgb(24, 24, 27)',
       },
+      backgroundImage: {
+        'custom-gradient':
+          'linear-gradient(transparent, rgba(24, 24, 27, 0.5) 40%, #18181b)',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
