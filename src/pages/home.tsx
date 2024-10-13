@@ -13,9 +13,9 @@ const Home = () => {
           </div>
           <div className='mt-8 min-h-full p-2'>
             <p className='text-white text-lg leading-8 font-sans font-thin'>
-              I'm a software engineer specializing in web development and
-              frontend infrastructure. My passion is improving Developer
-              Experience (DX) by creating tools to make development easier.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              eveniet consequatur beatae labore dignissimos enim magni cum
+              expedita reiciendis pariatur?
             </p>
           </div>
           <div className='mt-4 min-h-full p-2'>
