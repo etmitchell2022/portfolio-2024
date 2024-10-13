@@ -11,7 +11,6 @@ const createMarker = () => {
   customMarker.style.border = '2px solid white';
   customMarker.style.borderRadius = '50%';
   customMarker.style.boxShadow = '0 0 5px rgba(0,0,0,0.5)';
-  customMarker.style.cursor = 'pointer';
 
   return customMarker;
 };
@@ -26,7 +25,7 @@ const CustomMap = () => {
         container: mapContainerRef.current,
         style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
         center: [-98.5795, 39.8283],
-        zoom: 9,
+        zoom: 2,
         attributionControl: false,
         dragPan: false,
         interactive: false,
@@ -47,8 +46,8 @@ const CustomMap = () => {
         center: newCenter,
         essential: true,
         zoom: 13,
-        speed: 2,
-        curve: 1,
+        speed: 3,
+        curve: 0.5,
       });
     }
   };

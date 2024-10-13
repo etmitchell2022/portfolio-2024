@@ -4,6 +4,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
@@ -54,7 +57,7 @@ export default {
       },
       backgroundImage: {
         'custom-gradient':
-          'linear-gradient(transparent, rgba(24, 24, 27, 0.5) 40%, #18181b)',
+          'linear-gradient(transparent, rgba(24, 24, 27, 0.3) 40%, #18181b)',
       },
     },
   },
