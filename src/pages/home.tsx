@@ -1,4 +1,3 @@
-import React from 'react';
 import CustomMap from '../components/map';
 import IntroHeaderAnimation from '../components/animations/IntroHeaderAnimation';
 
