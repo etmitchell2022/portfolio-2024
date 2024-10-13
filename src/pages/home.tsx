@@ -1,6 +1,6 @@
 import React from 'react';
-import CustomMap from './map';
-import IntroHeaderAnimation from './animations/IntroHeaderAnimation';
+import CustomMap from '../components/map';
+import IntroHeaderAnimation from '../components/animations/IntroHeaderAnimation';
 
 const Home = () => {
   return (
