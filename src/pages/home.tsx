@@ -14,7 +14,7 @@ const Home = () => {
             <p className='text-white text-lg leading-8 font-sans font-thin'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
               eveniet consequatur beatae labore dignissimos enim magni cum
-              expedita reiciendis pariatur?
+              expedita reiciendis pariatur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, fuga.
             </p>
           </div>
           <div className='mt-4 min-h-full p-2'>
