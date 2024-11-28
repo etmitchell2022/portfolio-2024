@@ -4,7 +4,8 @@ import AnimatedDTLogo from "@/components/animations/AnimatedDTLogo";
 import WiggleImage from "@/components/wiggle-image";
 import portraitImage from "../assets/images/portrait.jpg";
 import { FaRegCalendar } from "react-icons/fa";
-import { IoBriefcaseOutline } from "react-icons/io5";
+import { IoBriefcaseOutline, IoSchoolOutline } from "react-icons/io5";
+import { AnimatedBSULogo } from "@/components/animations/AnimatedBSULogo";
 
 const Home = () => {
   return (
@@ -44,6 +45,47 @@ const Home = () => {
                   <div className="flex items-center">
                     <FaRegCalendar className="mr-2" />
                     <span>January 2022 - Present</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center mt-4">
+              <AnimatedDTLogo size={20} />
+              <div className="ml-3">
+                <h1 className="text-white text-xl font-sans mb-1">
+                  DeveloperTown
+                </h1>
+                <div className="flex items-center text-gray-400 text-sm space-x-4">
+                  <div className="flex items-center">
+                    <IoBriefcaseOutline className="mr-2" />
+                    <span>Software Engineer Intern</span>
+                  </div>
+                  <div className="flex items-center">
+                    <FaRegCalendar className="mr-2" />
+                    <span>May 2021 - August 2021</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-4 min-h-full p-2">
+            <h1 className="text-white text-3xl leading-8 font-sans font-thin">
+              School
+            </h1>
+            <div className="flex items-center mt-4">
+              <AnimatedBSULogo size={30} />
+              <div className="ml-3">
+                <h1 className="text-white text-xl font-sans mb-1">
+                  Ball State University
+                </h1>
+                <div className="flex items-center text-gray-400 text-sm space-x-4">
+                  <div className="flex items-center">
+                    <IoSchoolOutline className="mr-2" />
+                    <span>Computer Science</span>
+                  </div>
+                  <div className="flex items-center">
+                    <FaRegCalendar className="mr-2" />
+                    <span>August 2018 - December 2021</span>
                   </div>
                 </div>
               </div>
