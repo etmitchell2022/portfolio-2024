@@ -1,5 +1,7 @@
 import CustomMap from '../components/map';
 import IntroHeaderAnimation from '../components/animations/IntroHeaderAnimation';
+import AnimatedDTLogo from "@/components/animations/AnimatedDTLogo";
+
 
 const Home = () => {
   return (
