@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Roboto", "Helvetica", "Arial", "sans-serif"],
+        mono: ["Space Mono", "Roboto"],
       },
       borderRadius: {
         lg: "var(--radius)",
