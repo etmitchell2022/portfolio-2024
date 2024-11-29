@@ -7,6 +7,7 @@ import { FaRegCalendar } from "react-icons/fa";
 import { IoBriefcaseOutline, IoSchoolOutline } from "react-icons/io5";
 import { AnimatedBSULogo } from "@/components/animations/AnimatedBSULogo";
 import Clock from "@/components/clock";
+import CountUp from "react-countup";
 
 const Home = () => {
   return (
@@ -75,12 +76,16 @@ const Home = () => {
                   </span>
                   , I have developed and delivered mission-critical software
                   across multiple industries. This includes building an app for
-                  a major airline that is used on 1,000+ flights daily by pilots
-                  and flight attendants, as well as creating a platform in the
-                  commercial real estate space to provide clients with insights
-                  into their data and connectors, handling billions of data
-                  points. Along the way, I've deepened my expertise across many
-                  technologies, solving complex, real-world problems.
+                  a major airline that is used on{" "}
+                  <span>
+                    <CountUp end={1000} duration={1.5} />
+                  </span>
+                  + flights daily by pilots and flight attendants, as well as
+                  creating a platform in the commercial real estate space to
+                  provide clients with insights into their data and connectors,
+                  handling billions of data points. Along the way, I've deepened
+                  my expertise across many technologies, solving complex,
+                  real-world problems.
                 </p>
               </div>
               <div className="flex items-center mt-4">
