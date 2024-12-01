@@ -40,7 +40,7 @@ const Home = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
                   eveniet consequatur beatae labore dignissimos enim magni cum
                   expedita reiciendis pariatur? Lorem ipsum, dolor sit amet
-                  consectetur adipisicing elit. Debitis, fuga.
+                  consectetur adipisicing elit. Debitis.
                 </p>
               </div>
             </div>
