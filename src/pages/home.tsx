@@ -26,12 +26,12 @@ const Home = () => {
 
         {/* Content Section */}
         <div className="relative z-20 w-full bg-custom-bg">
-          <div className="w-full mx-auto px-4 py-8">
+          <div className="w-full mx-auto px-2 py-8">
             {/* Header Section */}
             <div className="pb-8">
               <div className="flex items-end justify-between -mt-[200px]">
                 <IntroHeaderAnimation />
-                <div className="mr-8">
+                <div className="mr-2">
                   <WiggleImage imageSrc={portraitImage} />
                 </div>
               </div>
@@ -40,7 +40,7 @@ const Home = () => {
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
                   eveniet consequatur beatae labore dignissimos enim magni cum
                   expedita reiciendis pariatur? Lorem ipsum, dolor sit amet
-                  consectetur adipisicing elit. Debitis.
+                  consectetur adipisicing elit. Debitis, fuga.
                 </p>
               </div>
             </div>
