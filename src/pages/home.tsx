@@ -21,13 +21,10 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Gradient Transition */}
         <div className="absolute top-36 left-0 w-full h-24 bg-custom-gradient z-10"></div>
 
-        {/* Content Section */}
         <div className="relative z-20 w-full bg-custom-bg">
           <div className="w-full mx-auto px-2 py-8">
-            {/* Header Section */}
             <div className="pb-8">
               <div className="flex items-end justify-between -mt-[200px]">
                 <IntroHeaderAnimation />
@@ -45,7 +42,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Work Section */}
             <div className="mt-8">
               <h1 className="text-white text-3xl leading-8 font-sans font-thin">
                 Work
@@ -108,7 +104,6 @@ const Home = () => {
               </div>
             </div>
 
-            {/* More Content */}
             <div className="mt-8">
               <h1 className="text-white text-3xl leading-8 font-sans font-thin">
                 School
