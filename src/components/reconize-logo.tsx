@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export const ReconizeLogo = ({ size = 100 }) => {
   return (
     <svg
@@ -23,9 +25,18 @@ export const ReconizeLogo = ({ size = 100 }) => {
         stroke-width='9'
         stroke-miterlimit='10'
       />
-      <path
+      <motion.path
         d='M40.0448 29.8418C41.1116 23.2698 36.6487 17.0773 30.0766 16.0105C23.5045 14.9437 17.312 19.4066 16.2452 25.9786C15.1784 32.5507 19.6413 38.7432 26.2134 39.81C32.7854 40.8768 38.978 36.4139 40.0448 29.8418Z'
         fill='#FF172E'
+        animate={{
+          scale: [1, 1.2, 1],
+          opacity: [1, 0.4, 1],
+        }}
+        transition={{
+          duration: 1.2,
+          repeat: Infinity,
+          ease: 'easeInOut',
+        }}
       />
       <rect
         x='20.3034'
@@ -54,9 +65,7 @@ export const ReconizeLogo = ({ size = 100 }) => {
           width='1'
           height='1'
         >
-          <use
-            transform='scale(0.027027 0.0277778)'
-          />
+          <use transform='scale(0.027027 0.0277778)' />
         </pattern>
         <pattern
           id='pattern1_119_2'
@@ -64,9 +73,7 @@ export const ReconizeLogo = ({ size = 100 }) => {
           width='1'
           height='1'
         >
-          <use
-            transform='scale(0.0322581 0.03125)'
-          />
+          <use transform='scale(0.0322581 0.03125)' />
         </pattern>
         <filter
           id='filter0_if_119_2'
@@ -107,16 +114,8 @@ export const ReconizeLogo = ({ size = 100 }) => {
             result='effect2_foregroundBlur_119_2'
           />
         </filter>
-        <image
-          id='image0_119_2'
-          width='37'
-          height='36'
-        />
-        <image
-          id='image1_119_2'
-          width='31'
-          height='32'
-        />
+        <image id='image0_119_2' width='37' height='36' />
+        <image id='image1_119_2' width='31' height='32' />
       </defs>
     </svg>
   );
