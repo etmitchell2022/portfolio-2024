@@ -132,10 +132,6 @@ const Home = () => {
                       <GoDeviceCameraVideo className='mr-2' />
                       <span>Private Investigation Software</span>
                     </div>
-                    <div className='flex items-center'>
-                      <FaRegCalendar className='mr-2' />
-                      <span>September 2024 - Present</span>
-                    </div>
                   </div>
                 </div>
               </div>
