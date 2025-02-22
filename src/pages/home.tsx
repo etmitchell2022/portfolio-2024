@@ -10,6 +10,7 @@ import { AnimatedBSULogo } from '@/components/animations/AnimatedBSULogo';
 import Clock from '@/components/clock';
 import CountUp from 'react-countup';
 import { ReconizeLogo } from '@/components/reconize-logo';
+import IndustryCard from '@/components/ui/industry-card';
 
 const Home = () => {
   return (
@@ -85,6 +86,7 @@ const Home = () => {
                   technologies, solving complex, real-world problems.
                 </p>
               </div>
+              <IndustryCard />
               <div className='flex items-center mt-4'>
                 <AnimatedDTLogo size={20} />
                 <div className='ml-3'>
