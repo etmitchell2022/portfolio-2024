@@ -1,13 +1,9 @@
-import React from 'react';
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from './card';
-import { Button } from './button';
 import { BorderBeam } from './border-beam';
 import PlaneSpiral from '../plane-spiral';
 
